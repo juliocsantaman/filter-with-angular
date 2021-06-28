@@ -5,3 +5,8 @@ h1 {
 input {
     margin: 1rem 0rem 1rem 0rem;
 }
+
+.card-container .card {
+    display: inline-block;
+    margin: 1rem;
+}

@@ -36,7 +36,7 @@ export class PostsComponent implements OnInit {
       id: 5,
       title: 'Wridea',
       date: '31/3/2021',
-      link: 'https://juliocsantaman.github.io/flashcard.github.io/'
+      link: 'https://juliocsantaman.github.io/ideas.github.io/'
     },
     {
       id: 6,
