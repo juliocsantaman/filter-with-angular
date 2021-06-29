@@ -5,37 +5,14 @@
             name="filterPost">
     </div>
 </div>
-<!-- <div class="container">
-                <table class="table table-hover table-dark">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>TÍTULO</th>
-                            <th>FECHA</th>
-                            <th>LINK DE PRUEBA</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let post of posts | filter: filterPost, lowercase">
-                            <td>{{ post.id }}</td>
-                            <td>{{ post.title }}</td>
-                            <td>{{ post.date }}</td>
-                            <td> <a class="btn btn-primary" href="{{ post.link }}"> {{ post.title }} </a> </td>
-                        </tr>
-                    </tbody>
-                </table> -->
-<!--Item 01-->
+
 <div class="container card-container">
-
-
-    <div class="card" style="width: 18rem;" *ngFor="let post of posts | filter: filterPost, lowercase">
-        <img src="#" class="card-img-top" alt="{{ post.id }}">
+    <div class="card" *ngFor="let post of posts | filter: filterPost, lowercase">
+        <img src="{{ post.img }}" class="card-img-top" alt="{{ post.id }}">
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <p class="card-text" style="max-height: 200px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus porro laboriosam
-                architecto unde qui nam, vitae excepturi omnis voluptates tempore, magnam, sint officia
-                tempora dolore placeat temporibus ab amet.
+                {{ post.description }}
             </p>
         </div>
 
@@ -44,6 +21,6 @@
             <i class="far fa-clock" style="font-size: 1.1rem; margin-left: 1.2rem;"> {{ post.date }}</i>
         </div>
     </div>
-
 </div>
-<footer>Creado por: Julio César Santaman Cruz</footer>
+
+<!-- <footer>Creado por: Julio César Santaman Cruz</footer> -->
